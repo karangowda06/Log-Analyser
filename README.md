@@ -1,48 +1,88 @@
-🔍 log-analyser.vlog
-log-analyser.vlog is a powerful and lightweight log analysis tool designed to parse, process, and visualize .vlog files (or similar structured log formats). It helps developers and system administrators gain insights into system behavior, detect anomalies, and troubleshoot issues efficiently.
+# 🔍 log-analyser.vlog
 
-🚀 Features
-Fast parsing of large .vlog log files
+**log-analyser.vlog** is a powerful yet lightweight tool designed for parsing, analyzing, and visualizing `.vlog` or similarly structured log files. Built for developers, system administrators, and cybersecurity analysts, it helps uncover system behavior, identify issues, and streamline troubleshooting with ease.
 
-Customizable filters and search queries
+---
 
-Timestamp-based event correlation
+## 🚀 Key Features
 
-Error and warning detection with summaries
+* ⚡ **High-Performance Parsing**
+  Efficiently handles and processes large `.vlog` files without compromising speed.
 
-Interactive CLI and/or web-based UI (if applicable)
+* 🔎 **Advanced Filtering & Search**
+  Apply custom filters or keyword-based searches to isolate important logs.
 
-Exportable reports (CSV, JSON, etc.)
+* ⏱️ **Timestamp-Based Correlation**
+  Automatically correlate logs by timestamp for chronological analysis.
 
-🛠️ Technologies Used
-Python (or your language of choice)
+* 🛑 **Error & Warning Detection**
+  Detect critical errors, warnings, and anomalies with summarized reports.
 
-Regex-based log parsing / log format schema
+* 🖥️ **Interactive Interface (Optional)**
+  Offers a command-line interface and optional web-based UI using Streamlit or Flask.
 
-(Optional) Flask / Streamlit / React for UI
+* 📤 **Exportable Reports**
+  Export filtered or processed logs in multiple formats (CSV, JSON) for further use.
 
-Unit tests and CI integration
+---
 
-📦 Installation
-bash
-Copy
-Edit
+## 🛠️ Built With
+
+* **Python** – Core language used for log parsing and data manipulation
+* **Regular Expressions** – For structured pattern matching in log entries
+* **Streamlit / Flask (Optional)** – For building an interactive web UI
+* **FPDF / Pandas** – For data reporting and PDF/CSV generation
+* **Scikit-learn (Optional)** – For clustering or anomaly detection tasks
+* **Unit Testing & CI** – For code quality and reliability
+
+---
+
+## 📦 Installation
+
+```bash
 git clone https://github.com/Karangowda06/log-analyser.vlog.git
 cd log-analyser.vlog
 pip install -r requirements.txt
-📄 Usage
-bash
-Copy
-Edit
-python analyser.py --file logs.vlog --filter "ERROR"
-📌 Use Cases
-Server/system log monitoring
+```
 
-Application debugging and profiling
+---
 
-Security log audits
+## 📄 Basic Usage
 
-Custom telemetry analysis
+```bash
+python analyser.py --file path/to/your/logs.vlog --filter "ERROR"
+```
 
-🤝 Contributing
-We welcome contributions! Feel free to fork the repo, submit issues, or open pull requests.
+Optional flags:
+
+* `--export csv` – Export filtered logs as a CSV file
+* `--ui` – Launch interactive web UI (if implemented)
+* `--keywords username,ip,action` – Extract specific fields
+
+---
+
+## 📌 Use Cases
+
+* 🔧 **Server/System Log Monitoring** – Track service health, performance, and downtime
+* 🐛 **Application Debugging** – Understand execution flow and errors
+* 🔐 **Security Audits** – Identify suspicious activities, unauthorized access, or breaches
+* 📊 **Telemetry Analysis** – Aggregate and analyze usage or sensor data from devices
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to:
+
+* Fork the repository
+* Submit feature requests or bug reports
+* Open pull requests with improvements
+
+Please ensure changes are tested and follow the coding standards outlined in the repo.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
